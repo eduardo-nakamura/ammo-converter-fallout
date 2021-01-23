@@ -42,3 +42,26 @@
         </div>
     </div>
 </div>
+
+
+
+
+<form [formGroup]="canalForm">
+    <div class="row mt-2 mb-2 d-flex align-items-center">
+        <div class="col-9 col-md-4  ">
+            <div class="form-group">
+                <label for="Name">Nome</label>
+                <input type="email" class="form-control" formControlName="Name" id="Name">
+            </div>
+        </div>
+        <div class="col-9 col-md-4  ">
+            <div class="form-group">
+                <label for="Code">Code</label>
+                <input type="code" class="form-control disabled-input" formControlName="Code" id="Code">
+            </div>
+        </div>
+
+
+    </div>
+</form>
+{{canalForm.value | json}}
